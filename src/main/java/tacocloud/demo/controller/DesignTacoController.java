@@ -15,6 +15,8 @@ import tacocloud.demo.entity.Ingredient;
 import tacocloud.demo.entity.Ingredient.Type;
 import tacocloud.demo.entity.Taco;
 
+import javax.validation.Valid;
+
 @Slf4j
 @Controller
 @RequestMapping("/design")
@@ -43,7 +45,8 @@ public class DesignTacoController {
     }
 
     @PostMapping
-    public String processDesign(Taco design) {
+    public String processDesign( @Valid Taco design, Errors errors) {
+        if (errors.hasErrors()) {return "design";}
 // Save the taco design...
 // We'll do this in chapter 3
         log.info("Processing design: " + design);
