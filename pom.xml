@@ -47,6 +47,22 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.jetbrains</groupId>
+			<artifactId>annotations</artifactId>
+			<version>RELEASE</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>restapi</groupId>
+			<artifactId>restapi</artifactId>
+			<version>7.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate.validator</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>6.1.6.Final</version>
+		</dependency>
 	</dependencies>
 
 	<build>
