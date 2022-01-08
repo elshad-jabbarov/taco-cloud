@@ -1,0 +1,5 @@
+#setting random port
+spring:
+  data:
+    rest:
+      base-path: /api
